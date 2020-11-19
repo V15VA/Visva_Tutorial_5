@@ -13,5 +13,5 @@ cache:
 deploy:
   provider: heroku
   api_key: d6918305-4097-4dbe-a425-c82e54415bc6
-  app: Visva-Tutorial-5
+  app: visva-tutorial-5
   skip_cleanup: true
