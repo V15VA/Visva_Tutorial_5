@@ -1,0 +1,17 @@
+anguage: java
+before_install:
+  - chmod +x gradlew
+script:
+  - ./gradlew build --info
+before_cache:
+  - rm -f $HOME/.gradle/caches/modules-2/modules-2.lock
+  - rm -fr $HOME/.gradle/caches/*/plugin-resolution/
+cache:
+  directories:
+    - $HOME/.gradle/caches/
+    - $HOME/.gradle/wrapper/
+deploy:
+  provider: heroku
+  api_key: d6918305-4097-4dbe-a425-c82e54415bc6
+  app: Visva_Tutorial_5
+  skip_cleanup: true
