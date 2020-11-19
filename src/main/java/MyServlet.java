@@ -13,6 +13,7 @@ public class MyServlet extends HttpServlet {
 //        super.doGet(req, resp);
         resp.setContentType("text/html");
         resp.getWriter().write("Hello world!");
+        resp.getWriter().write("Hello Travis");
     }
 
     @Override
